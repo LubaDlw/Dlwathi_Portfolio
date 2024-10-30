@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lubabalo Dlwathi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+
+            <h1> Lubabalo Dlwathi   </h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="htmlCode/gameDev.html">Game Dev</a></li>
+                <li><a href="htmlCode/frontDev.html">Front-End Dev</a></li>
+                <li><a href="htmlCode/uiux.html">UI/UX</a></li>
+                <li><a href="htmlCode/creative.html">Creative Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Lubabalo Dlwathi</h1>
+        <h2 class="role"><span id="role-text">Game Developer</span></h2>
+
+
+        <p>Welcome to my portfolio! Explore my projects, skills, and journey in digital innovation.</p>
+        <button onclick="scrollToSection('projects')">Explore My Work</button>
+        <div class="overlay"></div>
+    </section>
+    
+
+    
+   <!-- Projects Section -->
+<section id="web-projects" class="section">
+    <div class="card">
+        <h2>Portfolio</h2>
+        <div class="project-card">
+            <img src="https://i.pinimg.com/originals/8e/d7/64/8ed764e1d880d2a1e2e489ab25fa8059.gif" alt="Game Development">
+            <h3>Game Development</h3>
+            <div class="project-info">
+                <p>Description of a game development project, technologies used, and challenges solved.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="https://i.pinimg.com/originals/aa/59/d1/aa59d139b93dde70ff207187c9f1d8bd.gif" alt="Game Development">
+            <h3>Front-End Development</h3>
+            <div class="project-info">
+                <p>Description of a game development project, technologies used, and challenges solved.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="https://i.pinimg.com/originals/00/c5/37/00c537bdf08547f031540521892e5aa7.gif" alt="UI/UX Design">
+            <h3>UI/UX Design</h3>
+            <div class="project-info">
+                <p>Description of a UI/UX design project, technologies used, and challenges solved.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="https://i.pinimg.com/originals/dc/09/1e/dc091eb254057bd858756726c88210e5.gif" alt="Creative Design">
+            <h3>Creative Portfolio</h3>
+            <div class="project-info">
+                <p>Description of a creative design project, technologies used, and challenges solved.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="card">
+        <h2>Key Skills</h2>
+        <div class="skills-list">
+            <h3>Technical Skills</h3>
+            <p>JavaScript</p>
+            <p>C#</p>
+            <p >Unity</p>
+            <p> Html</p>
+            <p>CSS</p>
+            <p>D3.js</p>
+            <p>Figma</p>
+            <p>UX/UI</p>
+
+            <h3>Soft Skills</h3>
+            <p>Problem-solving</p>
+            <p>Team Collaboration</p>
+            <p>Project Management </p>
+            <p>Analytical Skills </p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="card">
+        <div class="about">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQF-p1vWkTAD5A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723807724878?e=1735776000&v=beta&t=GsWJmS8Q7eLUdFebn0Wyys8-yoLt5WSPj591axfyjv8" alt="Lubabalo" class="about-image">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <br>
+                <p>
+                    I am Lubabalo Dlwathi, a passionate and emerging South African creative dedicated to making a significant impact in the world of technology and the global economy. 
+                    Currently pursuing a degree in Digital Arts at the University of the Witwatersrand, I am committed to harnessing creativity through technology as a Front-End Developer and Game Developer. 
+                    My involvement in the Wits Developer Society Committee and various youth initiatives has fueled my ambition as a digital innovator. 
+                    I believe in the power of technology to drive change and am eager to contribute to projects that inspire and engage others.
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="https://github.com/yourprofile">GitHub</a> |
+            <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+        </div>
+    </section>
+
+    <section>   
+        <footer>
+            <p>&copy; 2024 Lubabalo Dlwathi. All rights reserved.</p>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

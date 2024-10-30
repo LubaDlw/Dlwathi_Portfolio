@@ -1,0 +1,269 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #006270;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 2rem;
+    height: 60px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: #f4f4f4;
+ 
+    height: 600px;
+   /* background-image: url('https://i.pinimg.com/originals/4b/dd/08/4bdd083ae4c96a16b63c8bf5e1f2492a.gif');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* General Styles for Hero Section */
+.hero h1 {
+    font-size: 3rem; /* Make name larger */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    color: #006270 ;
+    min-height: 2em; /* Reserve space to prevent content shifting */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for role changes */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.hero button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #006270;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero button:hover {
+    background-color: #009394  ;
+}
+
+.role span {
+    transition: opacity 0.5s;
+    opacity: 1;
+}
+
+.role span.hide {
+    opacity: 0;
+}
+
+
+
+.section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+
+.project-card {
+    display: inline-block;
+    width: 500px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+
+#game-card{
+    background-image: url('https://i.pinimg.com/564x/7d/91/db/7d91db460dcab1be52f80ddedb472bb9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.project-info {
+    display: none; /* Hide project info by default */
+    margin-top: 1rem; /* Space between title and description */
+}
+.project-card:hover {
+    transform: scale(1.05); /* Scale up card on hover */
+}
+
+.project-card:hover .project-info {
+    display: block; /* Show project info on hover */
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px; /* Rounded top-left corner */
+    border-top-right-radius: 10px;
+    object-fit: cover;
+
+}
+
+.skills-list p{
+    display: inline-block;
+    width: 2opx;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #8da6aa;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.skills-card{
+    display: inline-block;
+    width: 600px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.card {
+    background-color: #f4f4f4; /* White background for the card */
+    margin: 0.5rem auto; /* Center and add margin */
+    padding: 2rem; /* Padding inside the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 90%; /* Max width for larger card */
+}
+
+
+.about {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.about-image {
+    width: 350px; /* Set width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 8px; /* Optional: add border radius */
+}
+
+.about-text {
+    max-width: 8000px; /* Limit the width of the text container */
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.skills-list, .social-links {
+    margin-top: 1rem;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+button {
+    background-color: #006270 ;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #009394  ;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #006270;
+    height: 90px;
+}
+
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Space between the cards */
+    padding: 20px; /* Adds padding around the grid */
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px; /* Match the card edges */
+}
+
+.portfolio-item h3 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2em; /* Adjust font size */
+    color: #333; /* Darker text color for contrast */
+}
+
+/* Optional: Make the title bold */
+.portfolio-item h3 {
+    font-weight: bold;
+}
