@@ -18,3 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Rotate every 3 seconds
     setInterval(rotateRole, 3000);
 });
+
+
+function toggleMenu() {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('active');
+}

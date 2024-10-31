@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lubabalo Dlwathi Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+
 </head>
 <body>
     <!-- Navbar -->
     <header>
         <nav>
-
-            <h1> Lubabalo Dlwathi   </h1>
-            <ul>
+            <h1>Lubabalo Dlwathi</h1>
+            <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+            <ul id="navbar">
                 <li><a href="#home">Home</a></li>
                 <li><a href="gameDev.html">Game Dev</a></li>
                 <li><a href="frontDev.html">Front-End Dev</a></li>
@@ -22,6 +24,7 @@
             </ul>
         </nav>
     </header>
+    
 
     <!-- Hero Section -->
     <section id="home" class="hero">
